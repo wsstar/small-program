@@ -1,2 +1,2 @@
 # small-program
-A term of Small program
+A term of Small program read
