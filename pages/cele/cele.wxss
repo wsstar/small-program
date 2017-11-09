@@ -1,0 +1,57 @@
+.calendar{
+    width: 100%;
+}
+.calendar{
+    width: 100%;
+}
+.prev{
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+.next {
+    width: 20%;
+    float:right;
+    text-align: center;
+}
+/* .box-wrap{
+    width:95%;
+    margin:0 auto;
+} */
+.date-area{
+    width: 60%;
+    float: left;
+    text-align: center;
+}
+.day{
+    width: 100rpx;
+    height: 100rpx;
+    float:left;
+    text-align: center;
+    line-height: 100rpx;
+}
+.weeks{
+    clear:both;
+}
+.date-pick{
+    position: fixed;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+}
+.picker-cancel{
+    float: left;
+    margin-left:30rpx;
+}
+.picker-confirm{
+    float: right;
+    margin-right:30rpx;
+}
+.border-radius{
+    width:14%;
+    border-radius: 10px;
+} 
+.pink-bg{
+    background: pink;
+    color: #fff;
+}

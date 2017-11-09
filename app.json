@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/cele/cele"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "您的贴心小管家",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":true,
+    "backgroundColor":"#f2aaa4"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath":"img/homen.jpg",
+      "selectedIconPath":"img/home.jpg"
+    }, {
+      "pagePath": "pages/cele/cele",
+      "text": "日志",
+      "iconPath":"img/pern.jpg",
+      "selectedIconPath":"img/per.jpg"
+    }],
+    "color":"#000",
+    "selectedColor":"#f2aaa4",
+    "backgroundColor":"#fff",
+    "borderStyle":"black",
+    "position":"bottom"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
