@@ -1,5 +1,3 @@
-<view class="all">
-
 <view class="flex box box-tb box-align-center">
   <view class="calendar pink-color box box-tb">
         <view class="top-handle fs28 box box-lr box-align-center box-pack-center">
@@ -10,6 +8,7 @@
             <view class="next box box-lr" bindtap="handleCalendar" data-handle="next">
                 <view class="next-handle box box-lr box-align-center box-pack-center">》</view>
             </view>
+            <view class="clear"></view>
         </view>
         <view class="weeks box box-lr box-pack-center box-align-center box-wrap">
             <view class="flex week fs28 day" wx:for="{{weeks_ch}}" wx:key="{{index}}" data-idx="{{index}}">{{item}}</view>
@@ -38,6 +37,4 @@
             <view class="picker-view" wx:for="{{picker_month}}" style="line-height: 50px;text-align:center;">{{item}}月</view>
         </picker-view-column>
     </picker-view>
-</view>
-    
 </view>
