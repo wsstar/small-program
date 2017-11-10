@@ -17,5 +17,18 @@
 }
 
 .usermotto {
-  margin-top: 200px;
+  width: 100%;
+  margin-top:100px;
+}
+.usermotto .button{
+  width: 90%;
+  height: 100rpx;
+  line-height: 100rpx;
+  border:1px solid #ccc;
+  margin:20px auto;
+  text-align: center;
+  border-radius: 6px;
+}
+.navigator-hover{
+  background: pink;
 }

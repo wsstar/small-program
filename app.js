@@ -8,25 +8,25 @@ App({
    wx .setStorageSync('logs', logs)
 
     // 登录
-    wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
-        // consoel.log(res.code)
-        if(res.code){
-          wx.request({
-            url:'https://api.weixin.qq.com/sns/jscode2session',
-            data:{
-              js_code:res.code,
-              appid:APPID,
-              secret:SECRET,
-              grant_type:authorization_code
-            }
-          })
-        }else{
-          console.log(res.errMsg)
-        }
-      }
-    })
+    // wx.login({
+    //   success: res => {
+    //     // 发送 res.code 到后台换取 openId, sessionKey, unionId
+    //     // consoel.log(res.code)
+    //     if(res.code){
+    //       wx.request({
+    //         url:'https://api.weixin.qq.com/sns/jscode2session',
+    //         data:{
+    //           js_code:res.code,
+    //           appid:APPID,
+    //           secret:SECRET,
+    //           grant_type:authorization_code
+    //         }
+    //       })
+    //     }else{
+    //       console.log(res.errMsg)
+    //     }
+    //   }
+    // })
     // 获取用户信息
     wx.getSetting({
       success: res => {
@@ -46,6 +46,26 @@ App({
         }
       }
     })
+  },
+  getUserInfo:function(cb){
+    console.log(cb)
+    var that = this;  
+    if(this.globalData.userInfo){  
+      typeof cb == "function" && cb(this.globalData.userInfo)  
+    }else{  
+      //调用登录接口  
+      wx.login({  
+        success: function () {  
+          wx.getUserInfo({  
+            success: function (res) {  
+              that.globalData.userInfo = res.userInfo;  
+              typeof cb == "function" && cb(that.globalData.userInfo)  
+            }  
+          })  
+        }  
+      });  
+    }  
+
   },
   globalData: {
     userInfo: null

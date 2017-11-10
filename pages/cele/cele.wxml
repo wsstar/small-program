@@ -1,3 +1,5 @@
+<view class="all">
+
 <view class="flex box box-tb box-align-center">
   <view class="calendar pink-color box box-tb">
         <view class="top-handle fs28 box box-lr box-align-center box-pack-center">
@@ -36,4 +38,6 @@
             <view class="picker-view" wx:for="{{picker_month}}" style="line-height: 50px;text-align:center;">{{item}}月</view>
         </picker-view-column>
     </picker-view>
+</view>
+    
 </view>

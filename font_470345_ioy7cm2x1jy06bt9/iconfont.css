@@ -1,4 +1,4 @@
-/**app.wxss**/
+
 @font-face {font-family: "iconfont";
   src: url('iconfont.eot?t=1510297275178'); /* IE9*/
   src: url('iconfont.eot?t=1510297275178#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -17,6 +17,10 @@
 
 .icon-fenshenshuAPP:before { content: "\e61b"; }
 
+.icon-jiantou122:before { content: "\e602"; }
+
+.icon-3:before { content: "\e603"; }
+
 .icon-gear:before { content: "\e6bd"; }
 
 .icon-mamatizhong:before { content: "\e620"; }
@@ -30,12 +34,4 @@
 .icon-nvshengtouxiang:before { content: "\e6da"; }
 
 .icon-mamatizhong1:before { content: "\e601"; }
-.container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
-} 
+
